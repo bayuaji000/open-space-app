@@ -12,6 +12,7 @@ function Navigation({ authUser, signOut }) {
         <Link to="/">Home</Link>
       </nav>
       <button type="button" onClick={signOut}>Sign out</button>
+      <button className="button-out" type="button" onClick={signOut}>Sign out</button>
     </div>
   );
 }

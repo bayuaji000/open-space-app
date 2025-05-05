@@ -36,10 +36,15 @@ function HomePage() {
   }));
 
   return (
-    <section className="home-page">
+    <><section className="home-page">
       <TalkInput addTalk={onAddTalk} />
       <TalksList talks={talkList} like={onLike} />
-    </section>
+    </section><div className="bg">
+        <section className="home-page">
+          <TalkInput addTalk={onAddTalk} />
+          <TalksList talks={talkList} like={onLike} />
+        </section>
+      </div></>
   );
 }
 
